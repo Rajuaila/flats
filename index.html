@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Flats</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 1rem;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('th(9).jpeg');
+    object-fit:fill;
+    background-size:cover;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size:small;
+}
+.hh{
+    text-align: center;
+}
+
+/* Properties section styles */
+.properties {
+    padding: 2rem 1rem;
+}
+
+.properties h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.property-card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact h3,
+.site-visit h3 {
+    margin-bottom: 1rem;
+}
+
+.site-visit form {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-visit form input {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.site-visit form button {
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>DreamHome Flats</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hh">
+            <h2>Find Your Dream Home</h2>
+            <p>Browse through our exclusive collection of flats and book your dream home today.</p>
+        </section>
+        <section class="hero">
+           
+            <img src="th (9).jpeg" >
+          
+        
+        </section>
+
+        <section class="properties">
+            <h2>Featured Properties</h2>
+            <div class="property-list">
+                <div class="property-card">
+                    <img src="2bhk.jpg" alt="Property 1">
+                    <h3>2BHK Flat</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="property-card">
+                    <img src="3bhk.jpg" alt="Property 2">
+                    <h3>3BHK Duplex</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="property-card">
+                    <img src="th (10).jpeg" alt="Property 3">
+                    <h3>Suite Apartment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@dreamhomeflats.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </div>
+        <div class="site-visit">
+            <h3>Schedule a Site Visit</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
